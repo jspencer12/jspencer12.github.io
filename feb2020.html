@@ -135,45 +135,6 @@
         </table>
 
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-          <tr onmouseout="ALICE_stop()" onmouseover="ALICE_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='ALICE_image'>
-                  <img src='images/ALICE_test_sm.png' width="160"></div>
-                <img src='images/ALICE_train_sm.png' width="160">
-              </div>
-              <script type="text/javascript">
-                function ALICE_start() {
-                  document.getElementById('ALICE_image').style.opacity = "1";
-                }
-
-                function ALICE_stop() {
-                  document.getElementById('ALICE_image').style.opacity = "0";
-                }
-                flare_stop()
-              </script>
-            </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
-                <p>
-                  <a href="data/spencer2021feedback.pdf" class="docs" id="ALICE">
-                    <papertitle>Feedback in Imitation Learning: The Three Regimes of Covariate Shift</papertitle>
-                  </a>
-                  <br>
-                  <strong>Jonathan Spencer</strong>,
-				  <a href="http://www.sanjibanchoudhury.com/" class="people" id="schoudhury">Sanjiban Choudhury</a>, 
-				  <a href="https://www.linkedin.com/in/arun-venkatraman/" class="people" id="avenkatraman">Arun Venkatraman</a>,
-				  <a href="https://www.cs.uic.edu/Ziebart" class="people" id="bziebart">Brian Ziebart</a>,
-				  <a href="https://www.ri.cmu.edu/ri-faculty/j-andrew-drew-bagnell/" class="people" id="dbagnell">J. Andrew Bagnell</a>
-                  <br>
-                  <em>ArXiv</em>, 2021
-                  <br>
-                  <a href="https://arxiv.org/abs/2102.02872" class="docs" id="ALICE-arxiv">arxiv</a>
-                </p>
-                <p>
-                  We show how imitation learning can be divided into three regimes of interest, depending on the amount of covariate shift induced by environment feedback effects. In the easy regime, naive behavioral cloning (BC) works out of the box. In the hard regime, we must query expert everywhere (i.e. DAgger). We introduce a set of techniques that require fewer samples than BC in the medium-difficulty "Goldilocks" regime. 
-                </p>
-              </td>
-          </tr>
           <tr>
             <td width="25%"><img src="images/interventionlearning.png" alt="interventionlearning" width="160" style="border-style: none">
               <td width="75%" valign="top">
