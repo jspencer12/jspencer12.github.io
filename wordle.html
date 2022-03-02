@@ -18,11 +18,11 @@
  <h2>Wordle Dictionary Filter</h2>
  <p>Letters to include: <input id="include" autocomplete="off" value="" size="15"></p>
  <p>Letters to exclude: <input id="exclude" autocomplete="off" value="" size="15"></p>
- <p>Required letters: <input id="R0" autocomplete="off" maxlength="1" value="" size="1" style="text-align:center; width: 2ch;">
-                      <input id="R1" autocomplete="off" maxlength="1" value="" size="1" style="text-align:center; width: 2ch;">
-                      <input id="R2" autocomplete="off" maxlength="1" value="" size="1" style="text-align:center; width: 2ch;">
-                      <input id="R3" autocomplete="off" maxlength="1" value="" size="1" style="text-align:center; width: 2ch;">
-                      <input id="R4" autocomplete="off" maxlength="1" value="" size="1" style="text-align:center; width: 2ch;"></p>
+ <p>Required letters: <input id="R0" onClick="this.select();" autocomplete="off" maxlength="1" value="" size="1" style="text-align:center; width: 2ch;">
+                      <input id="R1" onClick="this.select();" autocomplete="off" maxlength="1" value="" size="1" style="text-align:center; width: 2ch;">
+                      <input id="R2" onClick="this.select();" autocomplete="off" maxlength="1" value="" size="1" style="text-align:center; width: 2ch;">
+                      <input id="R3" onClick="this.select();" autocomplete="off" maxlength="1" value="" size="1" style="text-align:center; width: 2ch;">
+                      <input id="R4" onClick="this.select();" autocomplete="off" maxlength="1" value="" size="1" style="text-align:center; width: 2ch;"></p>
  <p><button id="compute">Filter Dictionary</button></p>
  <p><span id="infozone">There are 2,315 valid words remaining</span></p>
  <p><span id="wordzone"></span></p>
