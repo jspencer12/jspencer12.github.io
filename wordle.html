@@ -12,7 +12,11 @@
 .reqletter input {
 text-align:center;
 width: 2ch;}
-.sim input {
+td {
+text-align:center;
+padding: 1px;
+}
+.sim table input {
 text-align:center;
 width: 6ch;}
 </style>
@@ -27,30 +31,31 @@ width: 6ch;}
 </head>
 
 <body>
+<h2>Wordle Strategy Helper</h2>
 <hr>
 <div class="filter">
- <h2>Wordle Dictionary Filter</h2>
+ <h3>Simple Dictionary Filter</h3>
  <p>Letters to include: <input id="include" autocomplete="off" value="" size="15"></p>
  <p>Letters to exclude: <input id="exclude" autocomplete="off" value="" size="15"></p>
  <div class="reqletter">
  <p>Required letters: <input id="req" onClick="this.select();" autocomplete="off" maxlength="1" value="">
-                      <input id="req" onClick="this.select();" autocomplete="off" maxlength="1" value="">
+					  <input id="req" onClick="this.select();" autocomplete="off" maxlength="1" value="">
                       <input id="req" onClick="this.select();" autocomplete="off" maxlength="1" value="">
                       <input id="req" onClick="this.select();" autocomplete="off" maxlength="1" value="">
                       <input id="req" onClick="this.select();" autocomplete="off" maxlength="1" value=""></p></div>
- <p><input type="radio" name="dict_sel" id="good" value="good" checked="checked"> Solution set (2,315) <input type="radio" name="dict_sel" id="all" value="all"> All words (12,972) 
+ <p><input type="radio" name="filt_dict_sel" id="good" value="good" checked="checked"> Solution set (2,315) <input type="radio" name="filt_dict_sel" id="all" value="all"> All words (12,972)</p>
  <p><button id="filter">Filter Dictionary</button></p>
  <p><span id="infozone"></span></p>
  <p><span id="wordzone"></span></p>
- 
 </div>
 <hr>
 <div class="sim">
- <h2>Gameplay Simulator</h2>
+ <h3>Gameplay Simulator</h3>
 <p>For each round, put in your guess, then the color sequence outcome i.e. "bbyyg"</p>
+<p><input type="radio" name="sim_dict_sel" id="good" value="good" checked="checked"> Solution set (2,315) <input type="radio" name="sim_dict_sel" id="all" value="all"> All words (12,972)</p>
 <p><button id="simulate">Update</button></p>
 <table id="sim_table">
-<tr><th scope="col">Round</th><th scope="col">Guess</th><th scope="col">Outcome</th><th scope="col">Remaining words (max 50 printed)</th></tr>
+<tr><td scope="col">Round</td><td scope="col">Guess</td><td scope="col">Outcome</td><td scope="col">Remaining words (max 50 printed)</td></tr>
 <tr><td>1</td><td><input autocomplete="off" value="" maxlength="5" id="guess"></td><td><input autocomplete="off" value="" maxlength="5" id="out"></td><td id="info"></td></tr>
 <tr><td>2</td><td><input autocomplete="off" value="" maxlength="5" id="guess"></td><td><input autocomplete="off" value="" maxlength="5" id="out"></td><td id="info"></td></tr>
 <tr><td>3</td><td><input autocomplete="off" value="" maxlength="5" id="guess"></td><td><input autocomplete="off" value="" maxlength="5" id="out"></td><td id="info"></td></tr>
@@ -71,7 +76,7 @@ function update_sim() {
   const guesses = [];
   const responses = [];
   var words = good
-  var dict_sel = document.querySelector('input[name="dict_sel"]:checked'); 
+  var dict_sel = document.querySelector('input[name="sim_dict_sel"]:checked'); 
   if(dict_sel != null) {
     if(dict_sel.value == "all"){ var words = all;
 	}}
@@ -151,7 +156,7 @@ function filter_dict() {
     }
     return valid;
   }
-  var dict_sel = document.querySelector('input[name="dict_sel"]:checked'); 
+  var dict_sel = document.querySelector('input[name="filt_dict_sel"]:checked'); 
   var words = good
   if(dict_sel != null) {
     if(dict_sel.value == "all"){ var words = all;
