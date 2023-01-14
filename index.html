@@ -108,14 +108,14 @@
             <td width="67%" valign="middle">
               <p align="center">
                 <name>Jonathan Spencer</name></br>
-                j dot spencer at princeton dot edu
+                <img src="images/email_left.png" style="border-style: none"><img src="images/email_right.png" style="border-style: none">
               </p>
-              <p>I have a deep love for all human beings. As such, I'm most interested in research projects that model or interact with humans and make this world a better place for them. My current research focuses on various aspects of imitation learning, and methods to make the training of imitation learning systems less taxing on the humans involved.
+	      <p>I work as a software engineer at <a href="https://waymo.com/" class="places" id="waymo">Waymo</a> on the Planner team, applying ML techniques to help the car reason about challenging multi-agent interactions in the next few seconds.
+	      </p>
+	      <p>My research background is in applying ML to robotics, using imitation learning and other methods to make the training of imitation learning systems less taxing on the humans involved. I have a deep love for all human beings. As such, I'm most interested in research projects that model or interact with humans and make this world a better place for them. I earned a Ph.D. from <a href="http://ee.princeton.edu/" class="places" id="princeton">Princeton University</a> as part of the Edge Lab, co-advised by <a href="https://engineering.purdue.edu/ECE/People/ptProfile?resource_id=171238" class="people" id="mchiang">Mung Chiang</a> and <a href="http://ee.princeton.edu/people/faculty/peter-j-ramadge" class="people" id="pramadge">Peter Ramadge</a>. Prior to Princeton I did my bachelors and masters degrees in electrical engineering at <a href="https://ece.byu.edu/" class="places" id="byu">Brigham Young University</a> working with <a href="https://ece.byu.edu/directory/karl-warnick" class="people" id="kwarnick">Karl Warnick</a> and the <a href="https://magicc.byu.edu/node" class="places" id="byu-magicc">MAGICC Lab</a> on radar signal processing and design for drone collision avoidance. During my Ph.D. I also spent time <!--designing analog circuits at <a href="https://www.onsemi.com/PowerSolutions/home.do" class="places" id="onsemi">ON Semiconductor</a>, -->training small robot cars with <a href="https://goodrobot.ai/" class="people" id="ssrinivasa">Sidd Srinivasa</a> and the <a href="https://mushr.io" class="places" id="mushr">UW MuSHR team</a>, and training large autonomous cars with the Motion Planning team at <a href="https://aurora.tech/" class="places" id="aurora">Aurora</a>.
+	      </p>
+	      <p>I love <a href="https://www.athlinks.com/athletes/267220513" class="docs" id="athlinks">running</a>, cycling, <a href="images/ironmanvineman2016_2.png" class="docs" id="tripic">triathlons</a>, learning new languages, <a href="https://www.youtube.com/watch?v=30XIUIwOuFo" class="docs" id="cello_youtube">playing my cello</a>, baking <a href="two-day-cookies.html" class="docs" id="cookies">cookies</a>, and <a href="wordle.html" class="docs" id="wordle">puzzles</a>.
               </p>
-              <p>I am a sixth year Ph.D. candidate at <a href="http://ee.princeton.edu/" class="places" id="princeton">Princeton University</a> as part of the Edge Lab, co-advised by <a href="https://engineering.purdue.edu/ECE/People/ptProfile?resource_id=171238" class="people" id="mchiang">Mung Chiang</a> and <a href="http://ee.princeton.edu/people/faculty/peter-j-ramadge" class="people" id="pramadge">Peter Ramadge</a>. Prior to Princeton I did my bachelors and masters degrees in electrical engineering at <a href="https://ece.byu.edu/" class="places" id="byu">Brigham Young University</a> working with <a href="https://ece.byu.edu/directory/karl-warnick" class="people" id="kwarnick">Karl Warnick</a> and the <a href="https://magicc.byu.edu/node" class="places" id="byu-magicc">MAGICC Lab</a> on radar signal processing and design for drone collision avoidance.</p>
-		<p>I've also spent time <!--designing analog circuits at <a href="https://www.onsemi.com/PowerSolutions/home.do" class="places" id="onsemi">ON Semiconductor</a>, -->training small robot cars with <a href="https://goodrobot.ai/" class="people" id="ssrinivasa">Sidd Srinivasa</a> and the <a href="https://mushr.io" class="places" id="mushr">UW MuSHR team</a>, and training large autonomous cars with the Motion Planning team at <a href="https://aurora.tech/" class="places" id="aurora">Aurora</a>. I love <a href="https://www.athlinks.com/athletes/267220513" class="docs" id="athlinks">running</a>, cycling, <a href="images/ironmanvineman2016_2.png" class="docs" id="tripic">triathlons</a>, learning new languages, baking <a href="two-day-cookies.html" class="docs" id="cookies">cookies</a>, and <a href="wordle.html" class="docs" id="wordle">puzzles</a>.
-              </p>
-		
               <p align=center>
                 <a href="data/JonathanSpencerResume202201.pdf" class="docs" id="resume">Resume</a> &nbsp/&nbsp
 		<a href="data/JonathanSpencerCV_202112.pdf" class="docs" id="cv">CV</a> &nbsp/&nbsp
@@ -127,15 +127,6 @@
               <img src="images/profileclose300.jpg">
             </td>
           </tr>
-        </table>
-		<table width="90%" align="center" border="0" cellspacing="0" cellpadding="20">
-          <tr>
-            <td width="100%" valign="middle">
-              <center><b>I am actively seeking interesting opportunities on both the academic job market as well as in industry roles focused on learning, prediction, and motion planning, both in startups and more established companies.<br>
-			  Don't hesitate to reach out!</b></center>
-	    </td>
-          </tr>
-        </table>
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
           <tr>
             <td width="100%" valign="middle">
@@ -145,6 +136,41 @@
         </table>
 		
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tr onmouseout="phd_stop()" onmouseover="phd_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='phd_image'>
+                  <img src='images/princeton_dissertation.png' width="160"></div>
+                <img src='images/princeton_dissertation_alt.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function phd_start() {
+                  document.getElementById('phd_image').style.opacity = "1";
+                }
+
+                function phd_stop() {
+                  document.getElementById('phd_image').style.opacity = "0";
+                }
+                flare_stop()
+              </script>
+            </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <p>
+                  <a href="https://dataspace.princeton.edu/bitstream/88435/dsp01ws859j82g/1/Spencer_princeton_0181D_14168.pdf" class="docs" id="princeton_dissertation">
+                    <papertitle>Learning from Humans: Beyond Classical Imitation Learning</papertitle>
+                  </a>
+                  <br>
+                  <strong>Jonathan C. Spencer</strong>
+                  <br>
+                  <em>Princeton University Ph.D. Thesis </em>, 2022
+                  <br>
+		  <a href="https://www.youtube.com/watch?v=2lxs8Me5ras" class="docs" id="princeton_dissertation-video">video</a>
+                </p>
+                <p>
+		  An overview of classical methods for learning from demonstration, including imitation learning and inverse reinforcement learning, followed with novel algorithms that improve on key deficiences in classical approaches. This includes lightly expanded versions of "Expert Intervention Learning" and "Feedback in Imitation Learning".
+                </p>
+              </td>
+          </tr>
 	  <tr>
             <td width="25%"><img src="images/EIL_main.png" alt="expertinterventionlearning" width="160" style="border-style: none">
               <td width="75%" valign="top">
