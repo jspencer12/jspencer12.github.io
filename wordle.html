@@ -40,7 +40,7 @@ It's probably disengenuous to use these tools in the middle of gameplay, but I'v
 <br><br>
 If you have any feedback or suggestions of things to add, feel free to <a href="https://forms.gle/ciHHvWw19jNmaArj9">fill out this form</a>.
 <br>
-And if you want to go back to my main site and read about my research, <a href="/">click here</a>.
+And if you want to go back to my main site and read about my research, <a href="/">click here for homepage</a>.
 <hr>
 <div class="lookup">
  <h3>[New!] Dictionary Lookup</h3>
@@ -186,14 +186,11 @@ function lookup() {
   const lookup_word = document.getElementById("potential_word").value.toLowerCase();
   if(lookup_word.length==5){
     if(good.includes(lookup_word)){
-      document.getElementById("lookup_info").innerHTML = "\""+lookup_word+"\" exists in the original solution set of 2,315 words!";
-	  document.getElementById("lookup_info").style = "color:#009C2D";
+      document.getElementById("lookup_info").innerHTML = "<p style=\"color:#009C2D;\">[Potential Solution]</p>\""+lookup_word+"\" exists in the original solution set of 2,315 words!";
     }else if(all.includes(lookup_word)){
-      document.getElementById("lookup_info").innerHTML = "\""+lookup_word+"\" is a valid guess, but does not exist in the original solution set of 2,315 words.";
-	  document.getElementById("lookup_info").style = "color:#E86600";
+      document.getElementById("lookup_info").innerHTML = "<p style=\"color:#Ff9700;\">[Valid Guess]</p>\""+lookup_word+"\" is a valid guess, but does not exist in the original solution set of 2,315 words.";
     }else{
-      document.getElementById("lookup_info").innerHTML = "\""+lookup_word+"\" is not a valid word in the dictionary of 12,972 5-letter words.";
-	  document.getElementById("lookup_info").style = "color:#C70039";
+      document.getElementById("lookup_info").innerHTML = "<p style=\"color:#ff0000;\">[Invalid Guess]</p>\""+lookup_word+"\" is not a valid word in the dictionary of 12,972 5-letter words.";
     }
   }else{
   	document.getElementById("lookup_info").innerHTML = "Please enter a 5-letter word.";
