@@ -20,6 +20,11 @@ width: 6ch;}
 width: 100%;}
 @media (min-width: 800px){ .main_table {width:800px}}
 </style>
+<script>
+var table = document.getElementById("main_table");
+if (window.innerWidth > 800){table.style.width = "800px";}
+else {table.style.width = "100%";}
+</script>
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XEVTW408KN"></script>
